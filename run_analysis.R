@@ -43,11 +43,12 @@ run_analysis <- function() {
         names(mainDF)[1]<-"Activity"
         
         #=====================Step 4: Approprietely labels the data set with descriptive var. names ==================#
-        names(mainDF)<-sub("-std","_std", names(mainDF))
+        names(mainDF)<-sub("-std","Std", names(mainDF))
         names(mainDF)<-sub("-mean","Mean", names(mainDF))
         names(mainDF)<-gsub("-","",names(mainDF))
         names(mainDF)<-gsub("\\(","", names(mainDF))
         names(mainDF)<-gsub("\\)","",names(mainDF))
+        names(mainDF)<-gsub("_","",names(mainDF))
         
         #===========Step 5: Data set with the average of each variable for each activity and each subject ============#
         library("plyr")

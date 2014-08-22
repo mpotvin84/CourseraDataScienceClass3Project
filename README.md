@@ -48,7 +48,89 @@ Nothing Special. Loading activities and row + column binding related tasks..
 
 ####2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-Considering only the column names containing the words "-std" or "-mean"
+Considering only the column names containing the words "-std" or "-mean". The following variable were retain:
+
+1. SubjectLabel
+2.	Activity
+3.	tBodyAccMeanX
+4.	tBodyAccMeanY
+5.	tBodyAccMeanZ
+6.	tGravityAccMeanX
+7.	tGravityAccMeanY
+8.	tGravityAccMeanZ
+9.	tBodyAccJerkMeanX
+10.	tBodyAccJerkMeanY
+11.	tBodyAccJerkMeanZ
+12.	tBodyGyroMeanX
+13.	tBodyGyroMeanY
+14.	tBodyGyroMeanZ
+15.	tBodyGyroJerkMeanX
+16.	tBodyGyroJerkMeanY
+17.	tBodyGyroJerkMeanZ
+18.	tBodyAccMagMean
+19.	tGravityAccMagMean
+20.	tBodyAccJerkMagMean
+21.	tBodyGyroMagMean
+22.	tBodyGyroJerkMagMean
+23.	fBodyAccMeanX
+24.	fBodyAccMeanY
+25.	fBodyAccMeanZ
+26.	fBodyAccMeanFreqX
+27.	fBodyAccMeanFreqY
+28.	fBodyAccMeanFreqZ
+29.	fBodyAccJerkMeanX
+30.	fBodyAccJerkMeanY
+31.	fBodyAccJerkMeanZ
+32.	fBodyAccJerkMeanFreqX
+33.	fBodyAccJerkMeanFreqY
+34.	fBodyAccJerkMeanFreqZ
+35.	fBodyGyroMeanX
+36.	fBodyGyroMeanY
+37.	fBodyGyroMeanZ
+38.	fBodyGyroMeanFreqX
+39.	fBodyGyroMeanFreqY
+40.	fBodyGyroMeanFreqZ
+41.	fBodyAccMagMean
+42.	fBodyAccMagMeanFreq
+43.	fBodyBodyAccJerkMagMean
+44.	fBodyBodyAccJerkMagMeanFreq
+45.	fBodyBodyGyroMagMean
+46.	fBodyBodyGyroMagMeanFreq
+47.	fBodyBodyGyroJerkMagMean
+48.	fBodyBodyGyroJerkMagMeanFreq
+49.	tBodyAccStdX
+50.	tBodyAccStdY
+51.	tBodyAccStdZ
+52.	tGravityAccStdX
+53.	tGravityAccStdY
+54.	tGravityAccStdZ
+55.	tBodyAccJerkStdX
+56.	tBodyAccJerkStdY
+57.	tBodyAccJerkStdZ
+58.	tBodyGyroStdX
+59.	tBodyGyroStdY
+60.	tBodyGyroStdZ
+61.	tBodyGyroJerkStdX
+62.	tBodyGyroJerkStdY
+63.	tBodyGyroJerkStdZ
+64.	tBodyAccMagStd
+65.	tGravityAccMagStd
+66.	tBodyAccJerkMagStd
+67.	tBodyGyroMagStd
+68.	tBodyGyroJerkMagStd
+69.	fBodyAccStdX
+70.	fBodyAccStdY
+71.	fBodyAccStdZ
+72.	fBodyAccJerkStdX
+73.	fBodyAccJerkStdY
+74.	fBodyAccJerkStdZ
+75.	fBodyGyroStdX
+76.	fBodyGyroStdY
+77.	fBodyGyroStdZ
+78.	fBodyAccMagStd
+79.	fBodyBodyAccJerkMagStd
+80.	fBodyBodyGyroMagStd
+81.	fBodyBodyGyroJerkMagStd
 
 ####3. Uses descriptive activity names to name the activities in the data set
 
@@ -56,7 +138,7 @@ Using a right outer join with the y_test/y_train.
 
 ####4. Appropriately labels the data set with descriptive variable names. 
 
-Based on the Activity Label data set names, transforming them into the camelCase writing convention plus by removing undesired punctuation such as "(", ")", "-", etc.
+Based on the Activity Label data set names, transforming them into the camelCase writing convention plus by removing undesired punctuation such as "(", ")", "-", etc. See Step 2.
 
 ####5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
